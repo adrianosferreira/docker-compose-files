@@ -36,7 +36,8 @@ services:
       - wpsite
   # Wordpress
   wordpress:
-    build: ./build
+    build:
+      context: .
     depends_on:
       - db
     ports:
