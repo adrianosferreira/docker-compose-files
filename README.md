@@ -1,2 +1,2 @@
 # Docker Compose Files
-A set of ready docker-composer files for many application types
+A set of ready docker-compose files for many application types
