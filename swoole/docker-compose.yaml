@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  web:
+    build:
+      context: .
+    volumes:
+      - ./:/var/www/html
+    ports:
+      - '9501:9501'
+    command: /usr/local/bin/swoolefor --exec="php /var/www/html/server.php" --no-inotify
