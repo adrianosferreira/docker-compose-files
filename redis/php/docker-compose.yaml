@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  apache:
+    build:
+      context: .
+    depends_on:
+      - db
+    volumes:
+      - ./src/:/var/www/html/
+    ports:
+      - '8888:80'
+    networks:
+      - phpsite
+  db:
+    image: redis
+    ports:
+      - '6379:6379'
+    networks:
+      - phpsite
+networks:
+  phpsite:
