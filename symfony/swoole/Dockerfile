@@ -1,4 +1,5 @@
 FROM php:7.3.13-cli-stretch
+MAINTAINER Adriano Ferreira <adrianokta@gmail.com>
 
 RUN apt-get update && apt-get install vim -y && \
     apt-get install openssl -y && \

@@ -1,4 +1,5 @@
 FROM php:7.1-apache
+MAINTAINER Adriano Ferreira <adrianokta@gmail.com>
 
 RUN pecl install xdebug-2.6.1; \
     docker-php-ext-enable xdebug; \

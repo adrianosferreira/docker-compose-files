@@ -1,4 +1,5 @@
 FROM wordpress:php7.2
+MAINTAINER Adriano Ferreira <adrianokta@gmail.com>
 
 WORKDIR /var/www/html
 RUN pecl install xdebug-2.6.1; \
